@@ -1,0 +1,7 @@
+  <ul class="list-group">
+{{#each todos}}
+<a href="/todo/{{id}}" class="list-group-item">{{title}}</a>
+  {{/each}}
+  </ul>
+  <a type="button" href="/todo/newpost" class="btn btn-default">Create a new To do</a>
+  <a type="button" href="/" class="btn btn-default">Start Over</a>
