@@ -1,4 +1,4 @@
-<form class="form" action="/todo" method="post">
+<form class="form" action="/todo/{{id}}" method="put">
   <h2>Edit this list item</h2>
   <div class="form-group">
     <label for="title">Title</label>
@@ -6,7 +6,7 @@
   </div>
   <div class="form-group">
     <label for="description">Description</label>
-    <textarea value="{{description}}" type="text" class="form-control" id="description" placeholder="Enter your description" name="description">
+    <textarea value="{{description}}" type="text" class="form-control" id="description" name="description">
     </textarea>
   </div>
   <div class="form-group">

@@ -33,13 +33,13 @@ function respondAndRenderTodo(id, res, viewName){
   }
 }
 
+router.get('/newpost', function(req, res) {
+  res.render('newpost');
+});
+
 router.get('/:id', function(req, res, next) {
   const id = req.params.id
   respondAndRenderTodo(id, res, 'single');
-});
-
-router.get('/newpost', function(req, res) {
-  res.render('newpost');
 });
 
 
